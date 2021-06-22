@@ -70,3 +70,20 @@ SELECT first_name AS worker_name FROM Worker ;
 ```
 
 ## Q-2. Write an SQL query to fetch “FIRST_NAME” from Worker table in upper case.
+```
+SELECT UPPER(first_name) FROM Worker ;
+```
+
+## Q-3. Write an SQL query to fetch unique values of DEPARTMENT from Worker table.
+```
+SELECT DISTINCT(department) FROM Worker ;
+```
+## Q-4. Write an SQL query to print the first three characters of  FIRST_NAME from Worker table.
+
+
+
+
+
+
+
+[Source](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
