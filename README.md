@@ -64,6 +64,9 @@ INSERT INTO Title
 
 ```
 
-##Q-1. Write an SQL query to fetch “FIRST_NAME” from Worker table using the alias name as <WORKER_NAME>.
+## Q-1. Write an SQL query to fetch “FIRST_NAME” from Worker table using the alias name as <WORKER_NAME>.
+```
+SELECT first_name AS worker_name FROM Worker ;
+```
 
-##Q-2. Write an SQL query to fetch “FIRST_NAME” from Worker table in upper case.
+## Q-2. Write an SQL query to fetch “FIRST_NAME” from Worker table in upper case.
