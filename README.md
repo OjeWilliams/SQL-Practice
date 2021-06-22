@@ -63,3 +63,7 @@ INSERT INTO Title
  (003, 'Lead', '2016-06-11 00:00:00');
 
 ```
+
+##Q-1. Write an SQL query to fetch “FIRST_NAME” from Worker table using the alias name as <WORKER_NAME>.
+
+##Q-2. Write an SQL query to fetch “FIRST_NAME” from Worker table in upper case.
