@@ -78,7 +78,20 @@ SELECT UPPER(first_name) FROM Worker ;
 ```
 SELECT DISTINCT(department) FROM Worker ;
 ```
+
 ## Q-4. Write an SQL query to print the first three characters of  FIRST_NAME from Worker table.
+```
+SELECT substring(first_name,1,3) FROM Worker ;
+```
+
+## Q-5. Write an SQL query to find the position of the alphabet (‘a’) in the first name column ‘Amitabh’ from Worker table.
+```
+SELECT first_name, POSITION('a' IN first_name )
+FROM Worker WHERE first_name = 'Amitabh' ;
+
+```
+
+
 
 
 
