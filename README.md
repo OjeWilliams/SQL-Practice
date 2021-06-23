@@ -90,10 +90,45 @@ SELECT first_name, POSITION('a' IN first_name )
 FROM Worker WHERE first_name = 'Amitabh' ;
 
 ```
+## Extra1 - Select the first name, last name and the position of the substring 'an' within last_name for those rows only where the substirng exists from the worker table.
+```
+SELECT first_name,last_name, POSITION('a' IN last_name )
+FROM Worker WHERE POSITION('an' IN last_name)>0 ;
+```
 
+## Q-6. Write an SQL query to print the FIRST_NAME from Worker table after removing white spaces from the right side.
+```
+SELECT first_name, RTRIM(first_name) FROM Worker  ;
+```
 
+## Q-7. Write an SQL query to print the DEPARTMENT from Worker table after removing white spaces from the left side.
+```
+SELECT department, LTRIM(department) FROM Worker  ;
+```
 
+## Q-8. Write an SQL query that fetches the unique values of DEPARTMENT from Worker table and prints its length.
+```
+SELECT DISTINCT(LENGTH(department)) FROM Worker  ;
+```
 
+## Q-9. Write an SQL query to print the FIRST_NAME from Worker table after replacing ‘a’ with ‘A’.
+```
+SELECT first_name, REPLACE(first_name, 'a','A') FROM Worker ;
+```
+
+## Q-10. Write an SQL query to print the FIRST_NAME and LAST_NAME from Worker table into a single column COMPLETE_NAME. A space char should separate them.
+```
+SELECT first_name || ' '||last_name AS complete_name FROM Worker ;
+
+OR
+
+SELECT CONCAT(first_name,'',last_name) AS Complete_Name FROM Worker ;
+```
+
+## Q-11. Write an SQL query to print all Worker details from the Worker table order by FIRST_NAME Ascending
+```
+SELECT * FROM Worker ORDER BY first_name ASC ;
+```
 
 
 
