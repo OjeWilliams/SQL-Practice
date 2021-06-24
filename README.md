@@ -185,7 +185,31 @@ SELECT * FROM worker
 WHERE first_name ILIKE '_____h';
 ```
 Q-19. Write an SQL query to print details of the Workers whose SALARY lies between 100000 and 500000.
-## 
+```
+SELECT * FROM worker 
+WHERE salary Between 100000 AND 500000 ;
+```
+
+## Q-20. Write an SQL query to print details of the Workers who have joined in Feb’2014.
+```
+SELECT * FROM worker 
+WHERE joining_date BETWEEN '2014-02-01' AND '2014-03-01' 
+```
+
+## Extra2 - Write a SQL query to get the second highest salary from the worker table.
+```
+SELECT MAX(salary) AS Second_highest_salary FROM worker
+WHERE salary < (SELECT MAX(salary) FROM WORKER)
+ ;
+ 
+ OR (more specific)
+ 
+SELECT DISTINCT(salary) FROM worker
+ORDER BY salary DESC LIMIT 1 OFFSET 1
+ ;
+ 
+ 
+```
 
 
 
