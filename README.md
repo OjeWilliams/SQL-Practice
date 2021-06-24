@@ -169,8 +169,23 @@ WHERE department ILIKE '%admin%';
 
 ## Q-16. Write an SQL query to print details of the Workers whose FIRST_NAME contains ‘a’.
 ```
-
+SELECT * FROM worker 
+WHERE first_name ILIKE '%a%';
 ```
+
+## Q-17. Write an SQL query to print details of the Workers whose FIRST_NAME ends with ‘a’.
+```
+SELECT * FROM worker 
+WHERE first_name ILIKE '%a';
+```
+
+## Q-18. Write an SQL query to print details of the Workers whose FIRST_NAME ends with ‘h’ and contains six alphabets.
+```
+SELECT * FROM worker 
+WHERE first_name ILIKE '_____h';
+```
+Q-19. Write an SQL query to print details of the Workers whose SALARY lies between 100000 and 500000.
+## 
 
 
 
