@@ -149,7 +149,28 @@ WHERE first_name IN ('Vipul','Satish')
 
 ```
 
-## 
+## Q-14. Write an SQL query to print details of workers excluding first names, “Vipul” and “Satish” from Worker table.
+```
+SELECT * FROM worker 
+WHERE first_name NOT IN ('Vipul','Satish')
+```
+
+## Q-15. Write an SQL query to print details of Workers with DEPARTMENT name as “Admin”.
+```
+SELECT * FROM worker 
+WHERE department IN ('Admin')
+
+OR
+
+SELECT * FROM worker 
+WHERE department ILIKE '%admin%';
+
+```
+
+## Q-16. Write an SQL query to print details of the Workers whose FIRST_NAME contains ‘a’.
+```
+
+```
 
 
 
