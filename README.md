@@ -137,5 +137,20 @@ SELECT first_name, department FROM worker
 ORDER BY first_name,department DESC;
 ```
 
+## Q-13. Write an SQL query to print details for Workers with the first name as “Vipul” and “Satish” from Worker table.
+```
+SELECT * FROM worker 
+WHERE first_name = 'Vipul' OR first_name = 'Satish'
+
+OR
+
+SELECT * FROM worker 
+WHERE first_name IN ('Vipul','Satish')
+
+```
+
+## 
+
+
 
 [Source](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
