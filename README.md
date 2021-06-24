@@ -131,7 +131,11 @@ SELECT * FROM Worker ORDER BY first_name ASC ;
 ```
 
 
-
+## Q-12. Write an SQL query to print all Worker details from the Worker table order by FIRST_NAME Ascending and DEPARTMENT Descending.
+```
+SELECT first_name, department FROM worker 
+ORDER BY first_name,department DESC;
+```
 
 
 [Source](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
