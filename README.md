@@ -212,6 +212,39 @@ ORDER BY salary DESC LIMIT 1 OFFSET 1
  
 ```
 
+## Q-21. Write an SQL query to fetch the count of employees working in the department ‘Admin’.
+```
+SELECT COUNT(*)
+FROM worker WHERE DEPARTMENT = 'Admin' ;
+```
+
+## Q-22. Write an SQL query to fetch worker names with salaries >= 50000 and <= 100000.
+```
+SELECT first_name ||' '|| last_name AS Workers , salary
+FROM worker WHERE salary BETWEEN 50000 AND 100000 ;
+```
+
+## Q-23. Write an SQL query to fetch the no. of workers for each department in the descending order.
+```
+SELECT department, COUNT(*) AS num_of_workers
+FROM worker 
+GROUP BY department
+ORDER BY num_of_workers DESC
+;
+```
+
+## Q-24. Write an SQL query to print details of the Workers who are also Managers.
+```
+SELECT first_name, last_name
+FROM worker
+INNER JOIN title ON
+worker.worker_id = title.worker_ref_id
+WHERE worker_title = 'Manager'
+;
+```
+
+## Q-25. Write an SQL query to fetch duplicate records having matching data in some fields of a table.
+
 
 
 [Source](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
