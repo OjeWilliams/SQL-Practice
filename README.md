@@ -244,7 +244,15 @@ WHERE worker_title = 'Manager'
 ```
 
 ## Q-25. Write an SQL query to fetch duplicate records having matching data in some fields of a table.
+```
+-- I checked and the only table to fit this was title
+SELECT worker_title, affected_from, COUNT(*) FROM title
+GROUP BY worker_title,affected_from
+HAVING COUNT(*) > 1
+;
+```
 
+##
 
 
 [Source](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
