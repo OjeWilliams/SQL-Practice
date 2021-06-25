@@ -252,7 +252,57 @@ HAVING COUNT(*) > 1
 ;
 ```
 
-##
+## Q-26. Write an SQL query to show only odd rows from a table.
+```
+SELECT * FROM worker
+WHERE MOD(worker_id,2) = 1 ;
+```
+
+## Q-27. Write an SQL query to show only even rows from a table.
+```
+SELECT * FROM worker
+WHERE MOD(worker_id,2) = 0 ;
+```
+
+## Q-28. Write an SQL query to clone a new table from another table.
+```
+-- With data
+CREATE TABLE clone_worker AS 
+TABLE worker;
+
+OR 
+
+-- with no data
+CREATE TABLE clone_worker AS 
+TABLE worker
+WITH NO DATA;
+```
+
+## Q-29. Write an SQL query to fetch intersecting records of two tables.
+```
+SELECT * FROM Worker
+INTERSECT
+SELECT * FROM clone_worker ;
+```
+
+## Q-30. Write an SQL query to show records from one table that another table does not have.
+```
+-- not sure about this one
+SELECT *
+FROM worker
+LEFT JOIN title ON worker.worker_id = title.worker_ref_id
+WHERE title.worker_ref_id IS NULL ;
+
+OR
+
+SELECT *
+FROM worker
+WHERE NOT EXISTS 
+    (SELECT * 
+     FROM title
+     WHERE title.worker_ref_id = worker.worker_id) ;
+```
+
 
 
 [Source](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
