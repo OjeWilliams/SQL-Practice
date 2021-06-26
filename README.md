@@ -357,6 +357,22 @@ WHERE w1.salary = w2.salary AND
 ;
 ```
 
+## Q-36. Write an SQL query to show the second highest salary from a table.
+```
+SELECT DISTINCT(salary)
+FROM worker
+ORDER BY salary DESC
+LIMIT 1 OFFSET 1
+;
+
+OR
+
+SELECT MAX(salary) FROM worker 
+WHERE salary NOT IN (SELECT MAX(salary) FROM worker);
+
+```
+
+
 
 
 [Source](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
