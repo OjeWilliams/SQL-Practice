@@ -336,10 +336,26 @@ OFFSET 4;
 
 ## Q-34. Write an SQL query to determine the 5th highest salary without using TOP or limit method.
 ```
-
+-- revirew carefully
+SELECT *
+FROM worker w1
+WHERE 4 =(
+	SELECT COUNT(DISTINCT(w2.salary))
+	FROM worker w2
+	WHERE w2.salary > w1.salary
+)
+;
 ```
 
-##
+## Q-35. Write an SQL query to fetch the list of employees with the same salary.
+```
+-- read carefully
+SELECT w1.worker_id, w1.first_name, w1.last_name, w1.salary, w1.department
+FROM worker w1, worker w2
+WHERE w1.salary = w2.salary AND
+      w1.worker_id != w2.worker_id
+;
+```
 
 
 
