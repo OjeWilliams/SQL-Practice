@@ -408,11 +408,19 @@ SELECT * FROM worker
 WHERE worker_id <= (SELECT COUNT(*)/2 FROM worker) ;
 ```
 
-## Q-40. Write an SQL query to fetch the departments that have less than five people in it.
+## Q-40. Write an SQL query to fetch the departments and their number of workers.
+```
+SELECT department, COUNT(*) AS Worker_count FROM worker
+GROUP BY department ;
 ```
 
+## Extra 4 -Write an SQL query to fetch the departments with less than 3 workers.
 ```
-
+SELECT department, COUNT(*) AS Worker_count FROM worker
+GROUP BY department 
+HAVING COUNT(*) < 3
+;
+```
 
 
 
