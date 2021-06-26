@@ -326,7 +326,13 @@ LIMIT 10 ;
 ```
 
 ## Q-33. Write an SQL query to determine the nth (say n=5) highest salary from a table.
-
+```
+SELECT DISTINCT(salary)
+FROM worker
+ORDER BY salary DESC
+LIMIT 1
+OFFSET 4; 
+```
 
 
 
