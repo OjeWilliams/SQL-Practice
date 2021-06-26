@@ -372,6 +372,18 @@ WHERE salary NOT IN (SELECT MAX(salary) FROM worker);
 
 ```
 
+## Q-37. Write an SQL query to show one row twice in results from a table.
+```
+SELECT * 
+FROM worker w1 WHERE w1.worker_id =1
+UNION ALL
+SELECT * FROM worker w2 WHERE w2.worker_id =1
+;
+
+```
+
+## Q-38. Write an SQL query to fetch intersecting records of two tables.
+
 
 
 
