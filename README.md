@@ -383,6 +383,37 @@ SELECT * FROM worker w2 WHERE w2.worker_id =1
 ```
 
 ## Q-38. Write an SQL query to fetch intersecting records of two tables.
+```
+SELECT * FROM worker 
+INNER JOIN bonus ON
+worker.worker_id = worker_ref_id
+;
+```
+## Extra 3 - Return a table that compares worker salary based on the same department.
+```
+-- A bit confusing, need to retry
+SELECT  w1.first_name ||' '|| w1.last_name AS Name,
+w2.first_name ||' '|| w2.last_name AS Name, w1.salary, w2.department 
+FROM worker as w1
+INNER JOIN worker AS w2 ON 
+w1.worker_id != w2.worker_id
+AND w1.department = w2.department
+ORDER BY department
+;
+```
+
+## Q-39. Write an SQL query to fetch the first 50% records from a table. 
+```
+SELECT * FROM worker 
+WHERE worker_id <= (SELECT COUNT(*)/2 FROM worker) ;
+```
+
+## Q-40. Write an SQL query to fetch the departments that have less than five people in it.
+```
+
+```
+
+
 
 
 
