@@ -334,6 +334,13 @@ LIMIT 1
 OFFSET 4; 
 ```
 
+## Q-34. Write an SQL query to determine the 5th highest salary without using TOP or limit method.
+```
+
+```
+
+##
+
 
 
 [Source](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
