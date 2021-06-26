@@ -303,6 +303,31 @@ WHERE NOT EXISTS
      WHERE title.worker_ref_id = worker.worker_id) ;
 ```
 
+## Q-31. Write an SQL query to show the current date and time.
+```
+--just the date
+SELECT Current_Date;
+
+OR
+-- timestamp with zone
+SELECT NOW();
+
+OR
+
+-- timestamp with zone
+SELECT CURRENT_TIMESTAMP;
+```
+
+## Q-32. Write an SQL query to show the top n (say 10) records of a table.
+```
+SELECT * FROM worker
+ORDER BY salary DESC
+LIMIT 10 ;
+```
+
+## Q-33. Write an SQL query to determine the nth (say n=5) highest salary from a table.
+
+
 
 
 [Source](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
