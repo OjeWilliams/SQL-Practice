@@ -421,7 +421,11 @@ GROUP BY department
 HAVING COUNT(*) < 3
 ;
 ```
-
+## Q-41. Write an SQL query to show all departments along with the number of people in there.
+```
+SELECT department, COUNT(department) AS Worker_count FROM worker
+GROUP BY department ;
+```
 
 
 
