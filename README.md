@@ -434,7 +434,7 @@ Order  BY worker_id DESC LIMIT 1;
 
 OR
 
-SELECT * from worker 
+SELECT * FROM worker 
 WHERE worker_id = (SELECT MIN(worker_id) FROM worker);
 ```
 
@@ -445,7 +445,7 @@ Order  BY worker_id  LIMIT 1;
 
 OR
 
-SELECT * from worker 
+SELECT * FROM worker 
 WHERE worker_id = (SELECT MIN(worker_id) FROM worker);
 ```
 
