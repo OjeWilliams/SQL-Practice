@@ -435,7 +435,18 @@ Order  BY worker_id DESC LIMIT 1;
 OR
 
 SELECT * from worker 
-WHERE worker_id = (SELECT MAZ(WORKER_ID) FROM worker);
+WHERE worker_id = (SELECT MIN(worker_id) FROM worker);
+```
+
+## Q-43. Write an SQL query to fetch the first row of a table.
+```
+SELECT *  FROM worker
+Order  BY worker_id  LIMIT 1;
+
+OR
+
+SELECT * from worker 
+WHERE worker_id = (SELECT MIN(worker_id) FROM worker);
 ```
 
 
