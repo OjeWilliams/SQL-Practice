@@ -427,6 +427,16 @@ SELECT department, COUNT(department) AS Worker_count FROM worker
 GROUP BY department ;
 ```
 
+## Q-42. Write an SQL query to show the last record from a table.
+```
+SELECT *  FROM worker
+Order  BY worker_id DESC LIMIT 1;
+
+OR
+
+SELECT * from worker 
+WHERE worker_id = (SELECT MAZ(WORKER_ID) FROM worker);
+```
 
 
 
