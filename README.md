@@ -449,6 +449,11 @@ SELECT * FROM worker
 WHERE worker_id = (SELECT MIN(worker_id) FROM worker);
 ```
 
+## Q-44. Write an SQL query to fetch the last five records from a table.
+```
 
+```
+
+##
 
 [Source](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
