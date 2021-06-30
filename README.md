@@ -465,6 +465,13 @@ GROUP BY (department)
 ;
 
 
+-- works but it returns two persons with the same salary from the same department
+SELECT worker.first_name, worker.salary, worker.department
+FROM worker
+INNER JOIN (SELECT  MAX(DISTINCT(salary)) AS Highest, department FROM worker GROUP BY department) AS b
+ON worker.department = b.department AND worker.salary = b.Highest
+;
+
 ```
 
 ##
