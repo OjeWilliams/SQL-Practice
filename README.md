@@ -458,6 +458,12 @@ LIMIT 5 ;
 
 ## Q-45. Write an SQL query to print the name of employees having the highest salary in each department.
 ```
+-- this returns the highest salary from each department
+SELECT DISTINCT(department), MAX(salary) AS Highest_Sal
+FROM Worker
+GROUP BY (department)
+;
+
 
 ```
 
