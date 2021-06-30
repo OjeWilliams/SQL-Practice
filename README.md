@@ -451,6 +451,13 @@ WHERE worker_id = (SELECT MIN(worker_id) FROM worker);
 
 ## Q-44. Write an SQL query to fetch the last five records from a table.
 ```
+SELECT * FROM worker 
+ORDER BY worker_id DESC
+LIMIT 5 ;
+```
+
+## Q-45. Write an SQL query to print the name of employees having the highest salary in each department.
+```
 
 ```
 
