@@ -492,6 +492,11 @@ LIMIT 3
 
 ```
 
-##
+## Q-47. Write an SQL query to fetch three min salaries from a table
+```
+
+```
+
+## 
 
 [Source](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
