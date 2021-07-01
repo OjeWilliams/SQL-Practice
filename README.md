@@ -185,7 +185,7 @@ WHERE first_name ILIKE '%a';
 SELECT * FROM worker 
 WHERE first_name ILIKE '_____h';
 ```
-Q-19. Write an SQL query to print details of the Workers whose SALARY lies between 100000 and 500000.
+## Q-19. Write an SQL query to print details of the Workers whose SALARY lies between 100000 and 500000.
 ```
 SELECT * FROM worker 
 WHERE salary Between 100000 AND 500000 ;
