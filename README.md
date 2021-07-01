@@ -501,6 +501,12 @@ LIMIT 3
 
 ## Q-48. Write an SQL query to fetch nth max salaries from a table.
 ```
+-- n is the desired salary position
+SELECT  DISTINCT(salary) FROM worker AS w1 
+WHERE n >= (SELECT COUNT(DISTINCT salary) FROM worker AS w2 
+			WHERE w1.salary <= w2.salary) 
+ORDER BY w1.salary DESC
+LIMIT 1 OFFSET n-1;
 
 ```
 
