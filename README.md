@@ -474,6 +474,24 @@ ON worker.department = b.department AND worker.salary = b.Highest
 
 ```
 
+## Q-46. Write an SQL query to fetch three max salaries from a table.
+```
+-- this returns the 3 highest salaries with all other info 
+SELECT * FROM worker
+ORDER BY SALARY DESC
+LIMIT 3
+;
+
+OR
+
+-- this returns the top 3 unique salaries
+SELECT DISTINCT(salary) FROM worker
+ORDER BY SALARY DESC
+LIMIT 3
+;
+
+```
+
 ##
 
 [Source](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
