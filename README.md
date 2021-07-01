@@ -494,7 +494,9 @@ LIMIT 3
 
 ## Q-47. Write an SQL query to fetch three min salaries from a table
 ```
-
+SELECT DISTINCT(salary) FROM worker
+ORDER BY SALARY 
+LIMIT 3
 ```
 
 ## 
