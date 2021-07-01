@@ -499,6 +499,20 @@ ORDER BY SALARY
 LIMIT 3
 ```
 
+## Q-48. Write an SQL query to fetch nth max salaries from a table.
+```
+
+```
+
 ## 
+
+
+
+
+
+
+
+
+
 
 [Source](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
