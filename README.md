@@ -515,7 +515,8 @@ LIMIT 1 OFFSET n-1;
 
 ```
 
-## 
+## Q-50. Write an SQL query to fetch the names of workers who earn the highest salary.
+
 
 
 
