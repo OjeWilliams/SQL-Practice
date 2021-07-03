@@ -512,6 +512,9 @@ LIMIT 1 OFFSET n-1;
 
 ## Q-49. Write an SQL query to fetch departments along with the total salaries paid for each of them.
 ```
+SELECT department, SUM(salary) FROM worker
+GROUP BY department
+;
 
 ```
 
