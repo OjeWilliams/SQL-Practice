@@ -520,7 +520,10 @@ GROUP BY department
 
 ## Q-50. Write an SQL query to fetch the names of workers who earn the highest salary.
 ```
-
+SELECT first_name, salary FROM worker
+WHERE salary = ( SELECT MAX(salary) FROM WORKER)
+ORDER BY Salary DESC
+;
 ```
 
 
