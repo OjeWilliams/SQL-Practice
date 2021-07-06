@@ -1,7 +1,7 @@
 # SQL-Practice
 
 Here is a little practice in SQL. 
-The following questions and queries were created and answered using PostgreSQL through pdAdmin 4
+The following questions and queries were created and answered using PostgreSQL through pdAdmin 4.
 
 **Creating Sample Data**
 ```
