@@ -1,6 +1,6 @@
 # SQL-Practice
 
-Here are some SQL practice questions. 
+Here are some SQL practice questions. <br/>
 The following questions and queries were created and answered using PostgreSQL through pdAdmin 4.
 
 **Creating Sample Data**
